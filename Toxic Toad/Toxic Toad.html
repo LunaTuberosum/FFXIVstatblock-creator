@@ -19,16 +19,18 @@
         font-size: 13px;
         background: #F3E1C6;
         padding-bottom: 0.5em;
+        padding-top: 20px;
         border: 3px #6A4A32 solid;
         border-radius: 20px;
         outline: 3px #D4B155 solid;
         box-shadow: 0 0 1.3em #867453;
 
-        width: 500px;
-        min-width: 500px;
+        width: max-content;
+        min-width: max-content;
 
-        height: fit-content;
+        height: var(--data-content-height);
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
 
     }
@@ -41,13 +43,14 @@
         color: #954E40;
         font-size: 22px;
         font-variant: small-caps;
-        padding: 10px 0px 5px 18px;
+        padding: 0px 0px 5px 18px;
     }
 
     top-stats {
         margin: 0px 13px;
         color: #fff;
         font-size: 16px;
+        width: 500px;
     }
 
     in::before {
@@ -160,6 +163,7 @@
         padding-bottom: 8px;
         padding-top: 4px;
         border-bottom: 3px #A08E68 solid;
+        width: 500px;
     }
 
     ability-block {
@@ -168,6 +172,7 @@
         margin: 0px 18px 8px 18px;
         padding-bottom: 5px;
         border-bottom: 3px #A08E68 solid;
+        width: 500px;
     }
 
     ability-block h2 {
@@ -183,6 +188,16 @@
     }
     
     ability-block p {
+        font-size: 14px;
+        margin: 0px 0px 3px 0px;
+    }
+
+    ability-block ul {
+        font-size: 14px;
+        margin: 0px 0px 3px 0px;
+    }
+
+    ability-block ul li {
         font-size: 14px;
         margin: 0px 0px 3px 0px;
     }
@@ -226,7 +241,7 @@
 
 </style>
 </head><body>
-<stat-block>
+<stat-block style="--data-content-height: auto;">
     <creature-heading>
       Toxic Toad
     </creature-heading>

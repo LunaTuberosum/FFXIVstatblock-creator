@@ -60,6 +60,15 @@ This makes it so everything is orginized and in the HTML file when refrencing a 
 
 And for refrence here is what Traits and each Ability type looks like in HTML
 
+At the top of the stat-card element you will see it say
+```
+style="data-content-height: auto;"
+```
+
+in place of auto you can specify any height and the box will shrink to the height and make the approiprate amount of columns to fit the remaining abilites.
+
+NOTE: Abilites can not wrap between colunms; possiably making weird empty spaces at the bottom.
+
 ### Traits
 ```
 <ability-block>
