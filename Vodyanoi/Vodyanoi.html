@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"/><title>Statblock example</title><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><style>
+    body {
+        margin: 0px;
+        display: flex;
+    }
+
+    h2 h1 p {
+        margin: 0px;
+    }
+
+    stat-block {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial,
+                  sans-serif;
+        font-size: 13px;
+        background: #F3E1C6;
+        padding-bottom: 0.5em;
+        border: 3px #6A4A32 solid;
+        border-radius: 20px;
+        outline: 3px #D4B155 solid;
+        box-shadow: 0 0 1.3em #867453;
+
+        width: 500px;
+        min-width: 500px;
+
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    stat-block creature-heading {
+        font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
+                 'Bookman Old Style', Bookman, 'Goudy Old Style',
+                 Garamond, 'Hoefler Text', 'Bitstream Charter',
+                 Georgia, serif;
+        color: #954E40;
+        font-size: 22px;
+        font-variant: small-caps;
+        padding: 10px 0px 5px 18px;
+    }
+
+    top-stats {
+        margin: 0px 13px;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    top-stats top-line {
+        display: flex;
+        font-size: 15px;
+        border-radius: 20px;
+        background-image: linear-gradient(#7D7D7D 50%, #43403F 55%, #7D7D7D);
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 12px;
+        position: relative;
+        z-index: 1;
+    }
+
+    top-stats content {      
+        background-image: linear-gradient(to right, #2D2A29, #504D4D 5%, #504D4D 95%,#2D2A29) ;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        border: 2px #F3E1C6 solid;
+        border-top: 0px;
+        margin-top: -20px;
+        position: relative;
+        padding-top: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 0;
+        flex-direction: column;
+    }
+
+    top-stats content top-area {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 80px;
+        margin-bottom: 10px;
+    }
+
+    top-stats content top-area left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    top-stats content top-area right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    property-line h4 {
+        margin: 0;
+        display: inline;
+        font-weight: bold;
+    }
+
+    property-line p {
+        display: inline;
+        text-indent: 0;
+        font-size: larger;
+    }
+
+    top-stats content bottom-area {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 10px 0px 10px;
+        margin-bottom: 6px;
+        border: 0px;
+        border-top: 5px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, #302826 10%, #939393 10%) 10;
+    }
+
+    top-stats content bottom-area property-line {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    top-stats content bottom-area property-line h4 {
+        margin: 0;
+        display: block;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+
+    top-stats content bottom-area property-line p {
+        display: block;
+        text-indent: 1;
+        font-size: large;
+        margin: 0pc;
+    }
+
+    h3 {
+        font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
+                 'Bookman Old Style', Bookman, 'Goudy Old Style',
+                 Garamond, 'Hoefler Text', 'Bitstream Charter',
+                 Georgia, serif;
+        color: #954E40;
+        font-size: 20px;
+        font-variant: small-caps;
+        margin: 0px 18px 5px 18px;
+        padding-bottom: 8px;
+        padding-top: 4px;
+        border-bottom: 3px #A08E68 solid;
+    }
+
+    ability-block {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 18px 8px 18px;
+        padding-bottom: 5px;
+        border-bottom: 3px #A08E68 solid;
+    }
+
+    ability-block h2 {
+        font-size: 18px;
+        margin: 0px 0px 5px 0px;
+    }
+
+    ability-block h1 {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: unset;
+        margin: 0;
+    }
+    
+    ability-block p {
+        font-size: 14px;
+        margin: 0px 0px 3px 0px;
+    }
+
+    ability-block header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    ability-block:last-of-type {
+        border-width: 0px;
+        margin-bottom: 0px;
+    }
+
+    lower {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    r {
+        color: #995745;
+        font-weight: bold;
+    }
+
+    a {
+        color: #2D638E;
+        font-weight: bold;
+    }
+
+    k {
+        color: #D34D35;
+        font-weight: bold;
+    }
+
+</style>
+</head><body>
+<stat-block>
+    <creature-heading>
+      Vodyanoi
+    </creature-heading>
+
+    <top-stats>
+        <top-line>
+            <h4>Size: Huge (3x3) - Wavekin</h4>
+            <h4>Vigilance: 10</h4>
+        </top-line>
+        
+        <content>
+            <top-area>
+                <left>
+                    <property-line>
+                        <h4>Defence:</h4>
+                        <p>14</p>
+                    </property-line>
+                    <property-line>
+                        <h4>Max HP:</h4>
+                        <p>120</p>
+                    </property-line>
+                </left>
+
+                <right>
+                    <property-line>
+                        <h4>Magic Defence:</h4>
+                        <p>13</p>
+                    </property-line>
+                    <property-line>
+                        <h4>Speed:</h4>
+                        <p>5 squares</p>
+                    </property-line>
+                </right>
+            </top-area>
+
+            <bottom-area>
+                <property-line>
+                    <h4>STR</h4>
+                    <p>+6</p>
+                </property-line>
+
+                <property-line>
+                    <h4>DEX</h4>
+                    <p>+0</p>
+                </property-line>
+
+                <property-line>
+                    <h4>VIT</h4>
+                    <p>+3</p>
+                </property-line>
+
+                <property-line>
+                    <h4>INT</h4>
+                    <p>-2</p>
+                </property-line>
+
+                <property-line>
+                    <h4>MND</h4>
+                    <p>+0</p>
+                </property-line>
+            </bottom-area>
+        </content>
+
+    </top-stats>
+
+    <h3>Traits</h3>
+
+    <ability-block>
+        <header>
+            <h2>Enrage</h2>
+        </header>
+        <p>During phase 2, this character’s abilities deal an additional 1d6 damage. Be sure to inform the players of this before beginning phase 2.</p>
+        
+    </ability-block>
+
+    <h3>Abilities</h3>
+
+    <ability-block>
+        <header>
+            <h2>Combo</h2>
+            <h1>Primary, Unique</h1>
+        </header>
+        <p><r>Base Effect:</r> Attack using <k>Sticky Tongue</k> and <k>Lap</k>, then use <k>Labored Leap</k>.</p>
+    </ability-block>
+
+    <ability-block>
+        <header>
+            <h2>Sticky Tongue</h2>
+            <h1>Primary, Physical, Blue Magic</h1>
+        </header>
+        <p><r>Target:</r> Single <r>Range:</r> 5 squares</p>
+        <p><r>Check:</r> <a>STR</a> (d20+6) <r>CR:</r> Target's <a>Defense</a></p>
+        <p><r>Base Effect:</r> Deals 2 damage to the target and forces them to move to the closest empty square adjacent to this character if one is available. While <b>Enrage</b> is active, this ability deals an additional 1d6 damage.</p>
+        <p><r>Direct Hit:</r> Deals an additional 1d6 damage.</p>
+    </ability-block>
+
+    <ability-block>
+        <header>
+            <h2>Lap</h2>
+            <h1>Primary, Physical</h1>
+        </header>
+        <p><r>Target:</r> Single <r>Range:</r> 2 squares</p>
+        <p><r>Check:</r> <a>STR</a> (d20+6) <r>CR:</r> Target's <a>Defense</a></p>
+        <p><r>Base Effect:</r> Deals 4 damage to the target. While <b>Enrage</b> is active, this ability deals an additional 1d6 damage.</p>
+        <p><r>Direct Hit:</r> Deals an additional 1d6 damage.</p>
+    </ability-block>
+
+    <ability-block>
+        <header>
+            <h2>Labored Leap</h2>
+            <h1>Primary, Stationary Marker, Physical</h1>
+        </header>
+        <lower>
+            <desc>
+                <p><r>Origin:</r> All squares occupied by this character</p>
+                <p><r>Marker Area:</r> A stationary 5x5 area centered on the origin</p>
+                <p><r>Target:</r> All enemies within the marker area</p>
+                <p><r>Marker Trigger:</r> The beginning of this character's next turn</p>
+                <p><r>Marker Effect:</r> Deals 3d6 damage to all targets while <b>Enrage</b> is active this ability deals an additional 1d6 damage.</p>
+            </desc>
+            <img src="./Labored Leap.png" alt="">
+        </lower>
+    </ability-block>
+
+  </stat-block></body></html>
